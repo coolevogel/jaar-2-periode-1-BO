@@ -7,6 +7,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "rockwell";
 }
 
 html {
@@ -14,7 +15,7 @@ html {
 }
 
 .header {
-  padding: 1rem;
+  padding: 5rem;
   width: 100%;
   height: 12rem;
   display: flex;
@@ -22,34 +23,102 @@ html {
   align-items: center;
   background-color: #2667E8;
   position: relative;
+  z-index: 1;
 }
-
 .header__logo {
-  bottom: 0;
-  left: 0;
+  bottom: -4rem;
+  left: 5rem;
   position: absolute;
-  background-color: green;
-  height: 10rem;
-  width: 20rem;
+  background-color: #FFFFFF;
+  height: 12rem;
+  width: 25rem;
+  border: 0.5rem solid black;
 }
-
 .header__nav {
   display: flex;
   align-items: center;
   height: 100%;
   width: 100%;
-  background-color: red;
   padding: 1rem;
 }
-
 .header__list {
-  background-color: black;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
   display: flex;
   gap: 2rem;
   list-style: none;
+  color: white;
+}
+.header__link {
+  font-size: 120%;
+  transition-duration: 0.3s;
+  color: white;
+  text-decoration: none;
+}
+.header__link:hover {
+  color: #FD6308;
+  cursor: pointer;
+}
+
+.banner {
+  height: 86vh;
+  width: 100%;
+  position: relative;
+}
+.banner__figure {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom right, rgba(38, 38, 38, 0.8), 80%, rgba(39, 39, 39, 0.8)), url(../../images/homepage.jpg);
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5rem;
+  z-index: -1;
+}
+.banner__cta {
+  border: none;
+  background: #FD6308;
+  appearance: none;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  color: #FFFFFF;
+  font-size: 150%;
+  padding: 3.5rem;
+  transition-duration: 0.3s;
+  z-index: 1;
+  position: relative;
+}
+.banner__cta:hover {
+  cursor: pointer;
+  background-color: #843201;
+}
+.banner__cta::before {
+  z-index: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 1rem;
+  left: 1rem;
+  border: 0.2rem solid #FD6308;
+  position: absolute;
+}
+
+.banner > figure > div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 3rem;
+  align-items: center;
   color: white;
 }
 
