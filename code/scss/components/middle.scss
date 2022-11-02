@@ -1,0 +1,13 @@
+@use '../variabelen/colors.scss';
+
+.middle{
+    height: auto;
+    padding: 5%;
+    width: 100vw;
+    background-color: colors.$white;
+    gap: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}

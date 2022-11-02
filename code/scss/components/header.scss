@@ -3,17 +3,18 @@
 .header {
     padding: 5rem;
     width: 100%;
-    height: 12rem;
+    height: 10vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     background-color: colors.$donkerblauw;
     position: relative;
     z-index: 1;
+    flex-wrap: wrap;
 
     &__logo{
         bottom: -4rem;
-        left: 5rem;
+        left: 5%;
         position: absolute;
         background-color: colors.$white;
         height: 12rem;

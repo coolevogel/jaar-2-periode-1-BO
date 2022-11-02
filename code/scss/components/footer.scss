@@ -1,0 +1,122 @@
+@use '../variabelen/colors.scss';
+
+.footer1{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem;
+    background-color: colors.$lichtblauw;
+    gap: 10rem;
+    
+    &__p{
+        color: colors.$white;
+        font-size: 120%;
+        max-width: 40ch;
+    }
+
+    &__cta {
+        border: none;
+        background: colors.$orange;
+        appearance: none;
+        width: max-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        color: colors.$white;
+        font-size: 150%;
+        padding: 3.5rem;
+        transition-duration: 0.3s;
+        z-index: 1;
+        position: relative;
+
+        &:hover{
+            cursor: pointer;
+            background-color: darken(colors.$orange, $amount: 25);
+        }
+
+        &::before{
+            z-index: 0;
+            content: "";
+            height: 100%;
+            width: 100%;
+            top: 1rem;
+            left: 1rem;
+            border: 0.2rem solid colors.$orange;
+            position: absolute;
+        }
+    }
+}
+
+.footer2{
+    padding: 10rem 30rem;
+    background-color: colors.$donkerblauw;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+
+    &__logo{
+    background-color: colors.$white;
+    height: 12rem;
+    min-width: 25rem;
+    border: 0.5rem solid black;
+    }
+
+    &__h2{
+        color: colors.$orange;
+        margin-bottom: 1rem;
+        font-family: 'rockwell';
+        font-weight: 300;
+    }
+
+    &__pagesList{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &Item{
+            font-size: 120%;
+            color: colors.$white;
+            list-style: none;
+            transition-duration: 0.3s;
+
+            &:hover{
+                cursor: pointer;
+                color: colors.$orange;
+            }
+        }
+    }
+
+    &__media{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    &__mediaList{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        list-style: none;
+
+        &Item{
+            width: 9rem;
+            height: 9rem;
+        }
+    }
+
+    &__icon{
+        width: 100%;
+        height: 100%;
+        color: colors.$white;
+        background-color: red;
+
+        &:hover{
+            color: colors.$orange;
+        }
+    }
+}

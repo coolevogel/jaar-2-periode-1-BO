@@ -1,0 +1,46 @@
+@use '../variabelen/colors.scss';
+
+.agenda {
+    width: 42.5%;
+    height: 100%;
+    color: colors.$orange;
+    font-family: 'rockwell';
+
+    &__h2 {
+        font-size: 200%;
+        font-weight: 200;
+        padding: 0.5rem;
+        border-bottom: 0.5rem solid colors.$orange;
+    }
+}
+
+.event{
+    margin-top: 0.5rem;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.5rem solid colors.$orange;
+    margin-bottom: 0.5rem;
+
+    &__title{
+        color: colors.$donkerblauw;
+        font-size: 130%;
+        font-weight: 300;
+        transition-duration: 0.3s;
+
+        &:hover{
+            cursor: pointer;
+            color: darken(colors.$donkerblauw, 20%);
+        }
+    }
+
+    &__description{
+        color: black;
+    }
+
+    &__date{
+        font-weight: 300;
+        color: colors.$donkerblauw;
+        margin-bottom: 0.5rem;
+    }
+}
