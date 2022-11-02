@@ -320,9 +320,12 @@ html {
   font-weight: 200;
   padding: 0.5rem;
 }
-.popup__arrowButton {
+.popup__arrowCheckbox {
   background: none;
   border: none;
+}
+.popup__arrowCheckbox:hover {
+  cursor: pointer;
 }
 .popup__button {
   height: auto;

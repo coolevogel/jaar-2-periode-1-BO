@@ -9,6 +9,7 @@
     position: relative;
     z-index: 1;
     padding: 2rem;
+    
 
     &::after{
         content: "";
@@ -41,10 +42,13 @@
         padding: 0.5rem;
     }
 
-    &__arrowButton{
+    &__arrowCheckbox{
         background: none;
         border: none;
 
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     &__button{
