@@ -2,10 +2,11 @@
 
 .middle{
     height: auto;
-    padding: 5%;
-    width: 100vw;
+    flex-wrap: wrap;
+    padding: 7rem 3rem;
+    max-width: 100vw;
     background-color: colors.$white;
-    gap: 10%;
+    gap: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;

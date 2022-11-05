@@ -1,14 +1,15 @@
 @use '../variabelen/colors.scss';
 
 .popup{
+    min-width: 40rem;
     width: 42.5%;
     height: 100%;
     color: colors.$white;
     font-family: 'rockwell';
     background-color: colors.$orange;
     position: relative;
-    z-index: 1;
     padding: 2rem;
+    z-index: 1;
     
 
     &::after{
@@ -19,6 +20,7 @@
         height: 100%;
         position: absolute;
         border: 0.2rem solid colors.$orange;
+        z-index: -1;
     }
 
     &__article{
