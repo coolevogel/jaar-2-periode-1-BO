@@ -1,4 +1,4 @@
-@use '../variabelen/colors.scss';
+@use '../../variabelen/colors.scss';
 
 .footer1{
     height: auto;
@@ -76,8 +76,11 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        list-style: none;
+        
 
         &Item{
+            text-decoration: none;
             font-size: 120%;
             color: colors.$white;
             list-style: none;

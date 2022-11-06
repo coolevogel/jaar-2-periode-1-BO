@@ -1,5 +1,8 @@
-@media only screen and (min-width: 200rem) {
+@media only screen and (width: 1000px) {
     .middle {
       padding: 100rem;
+    }
+    .header{
+      display: none;
     }
   }
