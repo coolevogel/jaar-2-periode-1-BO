@@ -1,9 +1,11 @@
 @use './base';
 @use './reset';
 @use './mediaQuerys.scss';
-@use './homepage/components/agenda.scss';
-@use './homepage/components/banner.scss';
-@use './homepage/components/footer.scss';
-@use './homepage/components/header.scss';
-@use './homepage/components/middle.scss';
-@use './homepage/components/popup.scss';
+@use './components/agenda.scss';
+@use './components/banner.scss';
+@use './components/footer.scss';
+@use './components/header.scss';
+@use './components/middle.scss';
+@use './components/popup.scss';
+@use './components/about.scss';
+@use './components/contact.scss';

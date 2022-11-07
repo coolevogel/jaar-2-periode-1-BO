@@ -1,7 +1,8 @@
-@use '../../variabelen/colors.scss';
+@use '../variabelen/colors.scss';
 
 .footer1{
     height: auto;
+    width: 99vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,7 +60,7 @@
     justify-content: center;
     gap: 10rem;
     flex-wrap: wrap;
-   
+    width: 99vw;
 
     &__logo{
     background-color: colors.$white;
