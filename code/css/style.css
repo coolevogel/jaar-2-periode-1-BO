@@ -91,6 +91,12 @@ html {
   padding: 10rem;
   z-index: -1;
 }
+.banner__text {
+  color: #FD6308;
+  margin-right: 25vw;
+  margin-bottom: 30rem;
+  font-size: 400%;
+}
 .banner__cta {
   border: none;
   background: #FD6308;

@@ -16,6 +16,15 @@
         justify-content: flex-end;
         padding: 10rem;
         z-index: -1;
+        
+    }
+
+    &__text{
+        color: colors.$orange;
+        margin-right: 25vw;
+        margin-bottom:30rem;
+        font-size: 400%;
+        
     }
 
     &__cta {

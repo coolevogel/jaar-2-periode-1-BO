@@ -8,6 +8,8 @@
     padding: 10rem;
     background-color: colors.$lichtblauw;
     gap: 10rem;
+   
+   
     
     &__p{
         color: colors.$white;
@@ -57,6 +59,7 @@
     justify-content: center;
     gap: 10rem;
     flex-wrap: wrap;
+   
 
     &__logo{
     background-color: colors.$white;
@@ -64,6 +67,8 @@
     min-width: 25rem;
     border: 0.5rem solid black;
     }
+    
+
 
     &__h2{
         color: colors.$orange;
