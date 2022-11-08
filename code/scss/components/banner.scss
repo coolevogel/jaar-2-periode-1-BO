@@ -16,10 +16,12 @@
         justify-content: flex-end;
         padding: 10rem;
         z-index: -1;
+        flex-wrap: wrap;
         
     }
 
     &__text{
+        
         color: colors.$orange;
         margin-right: 25vw;
         margin-bottom:30rem;
